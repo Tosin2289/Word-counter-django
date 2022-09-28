@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word counter</title>
+    <style type="text/css" rel="stylesheet">
+        h1{
+            font-family: Helvetica;
+            font-size: xx-large;
+            font-display:unset;
+
+            color: blueviolet;
+            padding-left: 45%;
+        }
+        h2{
+            font-family: Tahoma;
+            font-size: large;
+            font-display:unset;
+            color:darkmagenta;
+           padding:22px; 
+        padding-left: 350px;
+        }
+        body{
+            background-color: rgb(250, 151, 201);
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: indigo;
+        }
+        form{
+            border-radius: 50px;
+            
+            background-color: rgba(122, 52, 93,0.0001);
+            padding-left: 25%;
+        }
+        textarea{
+            box-sizing: border-box;
+            border-radius:2rem 50px;
+            color:blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        input{
+            background-color: blueviolet;
+            padding:0,0,0,8;
+            border-radius: 1rem 50px;
+            position: static;
+            font-size: large;
+            size: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Word counter</h1>
+
+<p>This is a specially designed website for counting the amount of words in pdf and documents.<br> All you have to do copy and paste the texts in those documents or pdfs into the textarea below.<br>Then hit submit, Very easy to use
+<br> Note this website can not handle more than 10000 words maximum.
+</p>
+<h2>Input your text here :</h2>
+<form method="" action="counter">
+    
+    <textarea name="text" rows="25" cols="100" placeholder="     Enter your text here ...."></textarea><br><br>
+    
+    <input type="submit">
+</form>
+
+</body>
+</html>
+
